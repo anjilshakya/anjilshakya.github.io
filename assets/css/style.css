@@ -272,25 +272,20 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 87%;
-  height: 92vh;
-  /* background: url("../img/prak-on.jpg") top right no-repeat; */
-  background: white;
+  width: 100%;
+  height: 115vh;
+  background: url("../img/close_boat.jpg") top right no-repeat;
+  /* background: white; */
   background-size: cover;
   position: relative;
-  left: 122px;
-  top: 30px;
+  /* left: 122px;
+  */
+  top: -90px; 
 }
 
 /*-----------
 new addition
 -----------*/
-
-#home-image{
-  position: absolute;
-  right: 60%;
-  width: 25%;
-}
 
 #im-div{
   position: absolute;
@@ -306,7 +301,7 @@ new addition
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  /* background: rgba(255, 255, 255, 0.8); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -319,11 +314,11 @@ new addition
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: #0563bb;
 }
 
 #hero p {
-  color: #45505b;
+  color: #0563bb;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -341,14 +336,14 @@ new addition
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  color: #0563bb;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
 }
 
 #hero .social-links a:hover {
-  color: #0563bb;
+  color: antiquewhite;
 }
 
 @media (max-width: 992px) {
@@ -497,14 +492,28 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+
+.skills {
+  padding: 60px 0;
 }
 
-.skills .progress .skill {
+.skills-content {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.skills .progress {
+  height: 40px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  font-size: 18px;
+  background: #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: 1px solid #0563bb;
+}
+
+/* .skills .progress .skill {
   padding: 10px 0;
   margin: 0;
   text-transform: uppercase;
@@ -512,22 +521,52 @@ section {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #45505b;
-}
+} */
 
-.skills .progress .skill .val {
+/* .skills .progress .skill .val {
   float: right;
   font-style: normal;
-}
+} */
 
-.skills .progress-bar-wrap {
+/* .skills .progress-bar-wrap {
   background: #f2f3f5;
-}
+} */
 
 .skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #0563bb;
+  height: 100%;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.section-title p {
+  font-size: 18px;
+  color: #6c757d;
+}
+
+/* Add your desired colors or background images to the progress bars */
+.progress-bar-1 {
+  background-color: #007bff; /* Bootstrap primary color */
+}
+
+.progress-bar-2 {
+  background-color: #28a745; /* Bootstrap success color */
+}
+
+.progress-bar-3 {
+  background-color: #dc3545; /* Bootstrap danger color */
 }
 
 /*--------------------------------------------------------------
